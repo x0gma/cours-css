@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(./assets/fonts/OpenSans-Light.ttf);
+}
+
+:root {
+    --color1: rgb(240, 240, 240);
+    --color2: rgb(87, 133, 201);
+    --color3: rgb(170, 170, 170);
+}
+
+* {
+    font-family: "OpenSans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 25px 25px 25px 100px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 25px 25px 25px 100px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 36px;
+    margin: 25px 100px 25px 100px;
+}
+
+button, .button {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background: none;
+    border: 1px solid var(--color3);
+    margin: 25px 25px 25px 100px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover,
+.button:hover {
+    background: var(--color2);
+    transform: scale(1.1);
+}
+
+body {
+    max-width: 100vw;
+    background: var(--color1);
+
+}
+
+header {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+}
+
+.header-right {
+    height: 100%;
+    width: 100%;
+    background: url(./assets/img/banner.jpg) right/cover;
+}
+
+.main {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+.main-left {
+    height: 100%;
+    width: 100%;
+    background: url(./assets/img/img-left.jpg) center/cover;
+}
+
+.bot {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.bot-right {
+    height: 100%;
+    width: 100%;
+    background: url(./assets/img/img-right.jpg) center/cover;
+}
+
+.bottom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bottom h2 {
+    margin: 0;
+}
+
+.form-grid {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 224px;
+    grid-template-areas:
+    "nm ml"
+    "ta ta";
+    gap: 15px;
+    align-items: center;
+}
+
+#nm {
+    grid-area: nm;
+}
+
+#ml {
+    grid-area: ml;
+}
+
+#ta {
+    grid-area: ta;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease ;
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    margin: 20px 0 40px;
+    border-radius: 4px;
+    border : 1px solid var(--color3);
+    padding: 10px;
+    transition: 0.2s ease;
+}
+input[type="text"]:focus,
+textarea:focus {
+    border: 2px solid var(--color2);
+
+}
+
+textarea {
+    resize: none;
+    height: 180px;
+}
+
+.button {
+    margin: 0;
+}
+
+footer {
+    margin: 100px auto ;
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+}
+
+footer img {
+    height: 20px;
+}
+
+footer ul {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

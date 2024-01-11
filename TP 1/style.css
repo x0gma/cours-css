@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "inter";
+    src: url(./assets/fonts/Inter/static/Inter-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: rgb(23, 23, 23);
+    font-family: "inter";
+    color: white;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 20px;
+}
+
+nav li {
+    display: flex;
+    
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    margin: 20px;
+}
+
+.main-container h2 {
+    font-size: 5rem;
+}
+
+.main-container h3 {
+    font-size: 2rem;
+    color: rgb(69, 15, 194);
+}
+
+.main-container img {
+   width: 50vW;
+}
+
+.footer {
+    display: flex;
+    background: rgb(12, 12, 12);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.footer-left {
+    width: 33%;
+}
+
+.footer-left ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer-left button {
+    background: rgb(69, 15, 194) ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin: 5px 10px;
+
+}
+
+.footer-right{
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-right h3 {
+    height: 33%;
+
+}
+
+.footer-right ul {
+    height: 67%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.footer-right img {
+    height: 50px;
+    text-align: center;
+}

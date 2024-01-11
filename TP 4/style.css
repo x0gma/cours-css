@@ -1,0 +1,33 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "y1 y1 p1"
+  "r1 g1 p1"
+  "r1 o1 o1";
+  gap: 10px;
+}
+
+#y1 {
+  background: yellow;
+  grid-area: y1;
+}
+#p1 {
+  background: purple;
+  grid-area: p1;
+}
+#g1 {
+  background: green;
+  grid-area: g1;
+}
+#r1 {
+  background: red;
+  grid-area: r1;
+}
+#o1 {
+  background: orchid;
+  grid-area: o1;
+}
